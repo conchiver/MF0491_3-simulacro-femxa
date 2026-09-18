@@ -1,0 +1,25 @@
+/*
+  Completa o modifica las reglas CSS
+*/
+body {
+  font-family: Verdana;
+}
+
+.coupon {
+  width: 80%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.container {
+  background-color: greenyellow;
+}
+
+.promo {
+  padding: 3px;
+}
+
+.expire {
+  color: black;
+}

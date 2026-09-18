@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APARTADO 1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="shelter-header">
+        <p class="shelter-header__eyebrow">Protectora Huellas de Esperanza</p>
+        <h1 class="shelter-header__title">Un hogar cambia una vida</h1>
+        <p class="shelter-header__intro">Conoce a nuestros perros y ayúdanos a encontrarles una familia.</p>
+    </header>
+
+    <main>
+        <section class="shelter-dogs" aria-labelledby="dogs-title">
+            <p class="shelter-dogs__eyebrow">Adopta con el corazon</p>
+            <h2 class="shelter-dogs__title" id="dogs-title">Perros que esperan una familia</h2>
+            <p class="shelter-dogs__intro">Cada uno tiene una personalidad unica. El siguiente paso de su historia puede ser contigo.</p>
+
+            <div class="shelter-dogs__list">
+                <article class="dog-card">
+                    <img class="dog-card__image" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=85" alt="Golden retriever sentado en un campo verde">
+                    <div class="dog-card__body">
+                        <p class="dog-card__details">4 anos · Tamano mediano</p>
+                        <h3 class="dog-card__name">Bruno</h3>
+                        <p class="dog-card__description">Bruno es alegre, noble y siempre esta listo para salir a pasear.</p>
+                        <a class="dog-card__link" href="#contacto">Conocer a Bruno <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="dog-card">
+                    <img class="dog-card__image" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=85" alt="Perro marron sentado mirando a la camara">
+                    <div class="dog-card__body">
+                        <p class="dog-card__details">2 anos · Tamano pequeno</p>
+                        <h3 class="dog-card__name">Lola</h3>
+                        <p class="dog-card__description">Lola es curiosa y carinosa. Le encantan los mimos y las siestas al sol.</p>
+                        <a class="dog-card__link" href="#contacto">Conocer a Lola <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="dog-card">
+                    <img class="dog-card__image" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=85" alt="Dos perros jugando juntos en la hierba">
+                    <div class="dog-card__body">
+                        <p class="dog-card__details">6 anos · Tamano mediano</p>
+                        <h3 class="dog-card__name">Nala</h3>
+                        <p class="dog-card__description">Nala es tranquila, sociable y disfruta de la compania de otros perros.</p>
+                        <a class="dog-card__link" href="#contacto">Conocer a Nala <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="dog-card">
+                    <img class="dog-card__image" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=85"
+                        alt="">
+                    <div class="dog-card__body">
+                        <p class="dog-card__details">1 ano · Tamano pequeno</p>
+                        <h3 class="dog-card__name">Toby</h3>
+                        <p class="dog-card__description">Toby es jugueton y divertido. Busca una familia con ganas de compartir aventuras.</p>
+                        <a class="dog-card__link" href="#contacto">Conocer a Toby <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="shelter-contact" id="contacto" aria-labelledby="contact-title">
+            <div class="shelter-contact__copy">
+                <p class="shelter-contact__eyebrow">Da el primer paso</p>
+                <h2 class="shelter-contact__title" id="contact-title">¿Quieres conocerlos?</h2>
+                <p>Cuéntanos un poco sobre ti y nos pondremos en contacto para organizar una visita.</p>
+            </div>
+
+            <form class="shelter-contact__form">
+                <div class="shelter-contact__field">
+                    <label for="name">Tu nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Como te llamas" required>
+                </div>
+
+                <div class="shelter-contact__field">
+                    <label>Tu correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="shelter-contact__field">
+                    <label for="dog-choice">¿A quien te gustaria conocer?</label>
+                    <select id="dog-choice" name="dog-choice">
+                        <option value="bruno">Bruno</option>
+                        <option value="lola">Lola</option>
+                        <option value="nala">Nala</option>
+                        <option value="toby">Toby</option>
+                    </select>
+                </div>
+
+                <button class="shelter-contact__button" type="submit">Quiero conocerle</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
