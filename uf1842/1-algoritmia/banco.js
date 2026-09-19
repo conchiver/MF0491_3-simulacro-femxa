@@ -14,6 +14,15 @@
  */
 
 function gestionarCuenta(saldo, operacion, cantidad) {
+    
+    if (operacion =="ingresar")
+        saldo+= cantidad;
+    
+    if(operacion=="retirar")
+        saldo-= cantidad;
+    
+
+    return saldo;
 
 }
 
